@@ -5,7 +5,7 @@ import { BsFillEnvelopeFill } from "react-icons/bs";
 import { BsFillCalendarFill } from "react-icons/bs";
 import { AiOutlineStar } from "react-icons/ai";
 import { AiOutlineCheckSquare } from "react-icons/ai";
-const Nabvar = ({ children }) => {
+const Nabvar = () => {
   const [dark, setDark] = useState(false);
   return (
     <div class="navbar bg-base-100 mx-auto px-12" data-theme={dark ? "dark" : "light"}>
@@ -61,7 +61,6 @@ const Nabvar = ({ children }) => {
               <span class="badge badge-sm indicator-item">8</span>
             </div>
           </label>
-          {children}
           <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
           </div>
         </div>

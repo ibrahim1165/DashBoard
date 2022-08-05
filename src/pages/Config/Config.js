@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiTwotoneHome} from "react-icons/ai";
 import { FiLock} from "react-icons/fi";
@@ -11,10 +11,12 @@ const Config = () => {
         <div>
           <div className="flex items-center">
           <h1 className="text-3xl px-6">Configuration</h1>
+          
           <Link className="text-xl text-primary flex items-center" to="/">
             <AiTwotoneHome />
             DashBoards</Link>
           </div>
+         
            <div class="navbar bg-base-100">
         <div class="navbar-center mt-4 text-black text-xl lg:flex">
           <ul class="menu menu-horizontal p-0">
@@ -28,8 +30,9 @@ const Config = () => {
                 </a></li>
             <li><a>
              <BsFillBookmarkFill />
-              Department
+             <Link to="/config/department">Department</Link>
                 </a></li>
+                
             <li><a>
              <BsBellFill />
              Country
@@ -41,7 +44,9 @@ const Config = () => {
           </ul>
         </div>
       </div>
+          <Outlet></Outlet>
         </div>
+      
     );
 };
 
