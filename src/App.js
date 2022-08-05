@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Nabvar from './pages/Shared/Nabvar';
+import DashBoard from './DashBoard';
 
 function App() {
   return (
-    <div>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </div>
+    <>
+    <Nabvar />
+    <DashBoard />
+    </>
   );
 }
 
